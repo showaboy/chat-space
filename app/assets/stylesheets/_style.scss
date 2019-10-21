@@ -7,6 +7,10 @@ body,html {
   padding: 0;
 }
 
+.wrapper{
+  display: flex;
+}
+
 .side-bar {
   box-sizing: border-box;
   color: $white;
@@ -41,6 +45,7 @@ body,html {
     .group {
       box-sizing: border-box;
       padding: 20px 0 40px;
+      text-decoration: none;
       &__name {
         color: $white;
         font-size: 16px;
@@ -50,35 +55,38 @@ body,html {
         font-size: 12px;
         margin-top: 5px;
       }
+      .group-link__btn {
+        text-decoration: none;
+      }
     }
   }
 } 
 
-.chat {
+.chat-main {
   width: calc(100% - 300px);
-  .header {
+  .main-header {
     box-sizing: border-box;
     height: 100px;
     padding: 0 40px;
-    .left-header {
+    &__left-box {
       float: left;
-      &__title {
+      margin-top: 35px;
+      &__current-group {
         color: #333;
         font-size: 20px;
-        margin-top: 35px;
       }
-      &__members {
-        // @include flexbox;
+      &__member-list {
+        display: flex;
         color: $light_gray;
         font-size: 12px;
-        margin-top: 15px;
-        .member {
+        margin-top: 5px;
+        &__member {
           display: inline-block;
           padding-right: 5px;
         }
       }
     }
-    .right-header {
+    .edit__btn {
       border: 1px solid $light_blue;
       color: $light_blue;
       float: right;
@@ -86,10 +94,7 @@ body,html {
       line-height: 40px;
       margin-top: 28px;
       padding: 0 20px;
-      &__button {
-        color: $light_blue;
-        text-decoration: none;
-      }
+      text-decoration: none;
     }
   }
 
@@ -156,6 +161,6 @@ body,html {
       height: 50px;
       margin-left: 15px;
       padding: 0 30px;
+      }
     }
   }
-}
