@@ -16,10 +16,7 @@ module ChatSpace
       g.javascripts false
       g.helper false
       g.test_framework false
-<<<<<<< Updated upstream
-=======
     end
     config.i18n.default_locale = :ja
->>>>>>> Stashed changes
   end
 end
