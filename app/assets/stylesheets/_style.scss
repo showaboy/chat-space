@@ -63,6 +63,10 @@ body,html {
   }
 } 
 
+.groups::-webkit-scrollbar {
+  display: none;
+}
+
 .chat-main {
   width: calc(100% - 300px);
   .main-header {
@@ -128,6 +132,10 @@ body,html {
         }
       }
     }
+  }
+
+  .messages::-webkit-scrollbar {
+    display: none;
   }
 
   .form {
