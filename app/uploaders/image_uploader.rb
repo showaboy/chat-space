@@ -1,5 +1,5 @@
 class ImageUploader < CarrierWave::Uploader::Base
-  Include MiniMagick support:
+  # Include MiniMagick support:
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick
 
